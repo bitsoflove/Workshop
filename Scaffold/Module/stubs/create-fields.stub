@@ -1,5 +1,5 @@
 <div class="box-body">
     <p>
-        Your fields //
+        @include('$LOWERCASE_MODULE_NAME$::admin.$PLURAL_LOWERCASE_CLASS_NAME$.partials.fields', ['lang' => $locale])
     </p>
 </div>

@@ -29,7 +29,7 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
      */
     public function extendWith(Menu $menu)
     {
-        $menu->group(trans('core::sidebar.content'), function (Group $group) {
+        $menu->group('$LOWERCASE_MODULE_NAME$', function (Group $group) {
             $group->item(trans('$LOWERCASE_MODULE_NAME$::$PLURAL_LOWERCASE_CLASS_NAME$.title.$PLURAL_LOWERCASE_CLASS_NAME$'), function (Item $item) {
                 $item->icon('fa fa-copy');
                 $item->weight(10);
